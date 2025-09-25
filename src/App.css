@@ -1,0 +1,133 @@
+/************ Custom Font ************/
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Book.ttf');
+	font-weight: 400;
+}
+
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Centra', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+.App {
+    height: 100vh;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    grid-template-rows: repeat(9, minmax(0, 1fr));
+    gap: 10px;
+    padding: 5px;
+    height: inherit;
+    margin: 10px;
+}
+.grid-element{
+  width: auto;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.row-2{
+  grid-row: span 2/ span 2 ;
+}
+.row-3{
+  grid-row: span 3/ span 3 ;
+}
+.row-4{
+  grid-row: span 4 / span 4 ;
+}
+.row-5{
+  grid-row: span 5 / span 5 ;
+}
+.row-7{
+  grid-row: span 7 / span 7 ;
+}
+.row-6{
+  grid-row: span 6 / span 6 ;
+}
+.column-2{
+  grid-column: span 2 / span 2 ;
+}
+.column-3{
+  grid-column: span 3 / span 3 ;
+}
+.column-4{
+  grid-column: span 4 / span 4 ;
+}
+.column-5{
+  grid-column: span 5 / span 5 ;
+}
+.bg-yellow{
+  background-color: #ebe285;
+}
+.bg-pink{
+  background-color: #ea79a4;
+}
+.bg-purple{
+  background-color: #CAADF1;
+}
+.bg-green{
+  background-color: #B6D4A0;
+}
+.bg-orange{
+  background-color: #f0a87a;
+}
+.bg-blue{
+  background-color: #9cced8;
+}
