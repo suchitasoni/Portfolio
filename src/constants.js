@@ -16,7 +16,7 @@ export const iconSrc = [
     {name: "linkedIn", lightSource: "https://cdn.lordicon.com/dbugezxr.json", darkSource: "https://cdn.lordicon.com/xxfmfkoa.json"},
     {name: "github", lightSource: "https://cdn.lordicon.com/lllcnxva.json", darkSource: "https://cdn.lordicon.com/acgiczyg.json"},
     {name: "mail", lightSource: "https://cdn.lordicon.com/gtvaxhwv.json", darkSource: "https://cdn.lordicon.com/zvamcipt.json"},
-    {name: "resume", lightSource: "https://cdn.lordicon.com/tbabdzcy.json", darkSource: "https://cdn.lordicon.com/ifyskbjd.json"},
+    {name: "resume", lightSource: "https://cdn.lordicon.com/yrtftktn.json", darkSource: "https://cdn.lordicon.com/qtebspeb.json"},
     {name: "thanks", lightSource: "https://cdn.lordicon.com/avlfdgbi.json", darkSource: "https://cdn.lordicon.com/bbwxffiv.json"}
 ]
 

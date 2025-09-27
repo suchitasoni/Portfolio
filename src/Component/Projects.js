@@ -1,8 +1,11 @@
-import {useState} from 'react';
+import {useState, useContext} from 'react';
 import Lordicon from 'react-lordicon';
-const Projects = ({iconSrc}) => {
+import { UserContext } from '../Context';
+
+const Projects = () => {
     const [isHovering, setIsHovering] = useState(false);
-    
+        const {iconSrc, mode} = useContext(UserContext);
+
     return(
         <div style={{textAlign: "center"}}>
             <div>Projects</div>
@@ -10,7 +13,7 @@ const Projects = ({iconSrc}) => {
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}>
                     <lord-icon
-                        src={iconSrc.find(icon => icon.name === "projects").lightSource}
+                        src={mode ? iconSrc.find(icon => icon.name === "projects").lightSource : iconSrc.find(icon => icon.name === "projects").darkSource}
                         trigger={isHovering ? 'hover' : 'in'} //morph
                         delay="150"
                         stroke="bold"

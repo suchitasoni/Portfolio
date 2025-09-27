@@ -1,13 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Grids from './Component/Grids';
+import {UserProvider} from './Context';
 
 function App() {
   return (
-    <div className="App">
-      <Grids />
-    </div>
+    <UserProvider>
+      <div className="App">
+        <Grids />
+      </div>
+    </UserProvider>
   );
 }
 
