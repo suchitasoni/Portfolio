@@ -8,7 +8,7 @@ module.exports = ({ mode } = { mode: "production" }) => {
             mode,
             entry: "./src/index.js",
             output: {
-                publicPath: "/",
+                publicPath: "/Portfolio",
                 path: path.resolve(__dirname, "build"),
                 filename: "bundle.js"
             },
