@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/suchitasoni.github.io/suchitasoni.github.io/static/css/main.dded378c.css",
+    "main.js": "/suchitasoni.github.io/suchitasoni.github.io/static/js/main.59e7cc42.js",
+    "static/js/845.03f6b0bb.chunk.js": "/suchitasoni.github.io/suchitasoni.github.io/static/js/845.03f6b0bb.chunk.js",
+    "static/media/Winter Ending.woff": "/suchitasoni.github.io/suchitasoni.github.io/static/media/Winter Ending.805f13e488447903dd76.woff",
+    "static/media/SummerShort.woff": "/suchitasoni.github.io/suchitasoni.github.io/static/media/SummerShort.c21459e107835443e3fa.woff",
+    "static/media/firehyd.svg": "/suchitasoni.github.io/suchitasoni.github.io/static/media/firehyd.3a4ec0d9c37dc427215d.svg",
+    "static/media/rocket.svg": "/suchitasoni.github.io/suchitasoni.github.io/static/media/rocket.862cdf35c4ab44890ea9.svg",
+    "index.html": "/suchitasoni.github.io/suchitasoni.github.io/index.html",
+    "static/media/network.svg": "/suchitasoni.github.io/suchitasoni.github.io/static/media/network.9dc2fe0d7a91564c5464.svg",
+    "static/media/heart.svg": "/suchitasoni.github.io/suchitasoni.github.io/static/media/heart.485238f4cf4ba98e7c30.svg",
+    "main.dded378c.css.map": "/suchitasoni.github.io/suchitasoni.github.io/static/css/main.dded378c.css.map",
+    "main.59e7cc42.js.map": "/suchitasoni.github.io/suchitasoni.github.io/static/js/main.59e7cc42.js.map",
+    "845.03f6b0bb.chunk.js.map": "/suchitasoni.github.io/suchitasoni.github.io/static/js/845.03f6b0bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dded378c.css",
+    "static/js/main.59e7cc42.js"
+  ]
+}
