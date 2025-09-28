@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Grids from './Component/Grids';
 import {UserProvider} from './Context';
 

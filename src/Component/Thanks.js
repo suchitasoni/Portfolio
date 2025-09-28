@@ -1,6 +1,6 @@
 import { useState, useContext} from 'react';
-import Lordicon from 'react-lordicon';
-import '../Toggle.css';
+import 'lord-icon-element';
+import '../Toggle.scss';
 import { UserContext } from '../Context';
 
 const Thanks = () => {

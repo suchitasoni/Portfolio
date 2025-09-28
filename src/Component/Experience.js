@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react';
-import Lordicon from 'react-lordicon';
+import 'lord-icon-element';
 import { UserContext } from '../Context';
 import { useTrail, a } from '@react-spring/web'
 

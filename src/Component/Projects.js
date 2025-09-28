@@ -1,5 +1,5 @@
 import {useState, useContext} from 'react';
-import Lordicon from 'react-lordicon';
+import 'lord-icon-element';
 import { UserContext } from '../Context';
 
 const Projects = () => {

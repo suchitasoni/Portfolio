@@ -1,5 +1,5 @@
 import { useState, useContext, useRef} from 'react';
-import Lordicon from 'react-lordicon';
+import 'lord-icon-element';
 import { UserContext } from '../Context';
 import Modal from './Modal';
 import { sendForm } from 'emailjs-com';
