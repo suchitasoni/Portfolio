@@ -202,16 +202,16 @@ input:focus, textarea:focus, select:focus {
   }
 }
 li#first{
-  background-image: url('/public/rocket.svg');
+  background-image: url('./assets/img/rocket.svg');
 }
 li#second{
-  background-image: url('/public/network.svg');
+  background-image: url('./assets/img/network.svg');
 }
 li#third{
-  background-image: url('/public/firehyd.svg');
+  background-image: url('./assets/img/firehyd.svg');
 }
 li#fourth{
-  background-image: url('/public/heart.svg');
+  background-image: url('./assets/img/heart.svg');
 }
 .modal{
   position: fixed;
