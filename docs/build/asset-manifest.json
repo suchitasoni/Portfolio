@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f20e7862.css",
-    "main.js": "/Portfolio/static/js/main.aab8d516.js",
+    "main.css": "/Portfolio/static/css/main.b61c9f9e.css",
+    "main.js": "/Portfolio/static/js/main.d7f889cc.js",
     "static/js/845.03f6b0bb.chunk.js": "/Portfolio/static/js/845.03f6b0bb.chunk.js",
     "static/media/Winter Ending.woff": "/Portfolio/static/media/Winter Ending.805f13e488447903dd76.woff",
     "static/media/SummerShort.woff": "/Portfolio/static/media/SummerShort.c21459e107835443e3fa.woff",
@@ -11,12 +11,12 @@
     "static/media/network.svg": "/Portfolio/static/media/network.9dc2fe0d7a91564c5464.svg",
     "static/media/cloud.svg": "/Portfolio/static/media/cloud.73e5971e4d6aeceaab84.svg",
     "static/media/heart.svg": "/Portfolio/static/media/heart.485238f4cf4ba98e7c30.svg",
-    "main.f20e7862.css.map": "/Portfolio/static/css/main.f20e7862.css.map",
-    "main.aab8d516.js.map": "/Portfolio/static/js/main.aab8d516.js.map",
+    "main.b61c9f9e.css.map": "/Portfolio/static/css/main.b61c9f9e.css.map",
+    "main.d7f889cc.js.map": "/Portfolio/static/js/main.d7f889cc.js.map",
     "845.03f6b0bb.chunk.js.map": "/Portfolio/static/js/845.03f6b0bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f20e7862.css",
-    "static/js/main.aab8d516.js"
+    "static/css/main.b61c9f9e.css",
+    "static/js/main.d7f889cc.js"
   ]
 }
