@@ -2,6 +2,7 @@ import React, {useState, useContext} from 'react';
 import 'lord-icon-element';
 import { UserContext } from '../Context';
 import { useTrail, a } from '@react-spring/web'
+import { Link } from 'react-router-dom';
 
 
 const Trail = ({ open, children }) => {
@@ -29,7 +30,7 @@ const Experience = () => {
   const [open, setOpen] = useState(true)
 
     return(
-        <div style={{textAlign: 'center',margin: '5% 0px',height: '90%'}}>
+        <Link to="/experience" style={{textAlign: 'center',margin: '5% 0px',height: '90%',textDecoration: 'none', color: mode ? 'black' : 'white'}}>
             <h2 className='heading'>Work Experience</h2>
             <div
                 onMouseEnter={() => setIsHovering(true)}
@@ -45,7 +46,7 @@ const Experience = () => {
                         style={{width: '130px', height: '130px', float: 'none'}}>
                     </lord-icon>
             </div>
-            <div className="container" onClick={() => setOpen(state => !state)}>
+            <div className="container">
                 <Trail open={open}>
                     <li id='first'>React Development</li>
                     <li id='second'>API Integration</li>
@@ -54,7 +55,7 @@ const Experience = () => {
                     <li id='fifth'>Agile Collaboration</li>
                 </Trail>
             </div>
-        </div>
+        </Link>
     )
 }
 export default Experience;

@@ -21,6 +21,8 @@ const Blog = () => {
                         style={{width: '130px', height: '130px'}}>
                     </lord-icon>
             </div>
+            <div style={{position: 'relative',fontWeight: '600',fontStyle: 'italic',marginBottom: '15%',fontSize:'x-large'}}>Coming soon...</div>
+
         </div>
     )
 }

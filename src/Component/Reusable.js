@@ -1,30 +1,46 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 
 export const DynamicTyping = ({text, speed, style}) =>{
 
-    const[formedText, setFormedText] = useState('');
+      const [displayed, setDisplayed] = useState("");
+  const timerRef = useRef(null);
+  const mountedRef = useRef(true);
 
-    useEffect(() => {
-        let index=0;
-        const interval = setInterval(() => {
-            setFormedText(prev=> prev + text.charAt(index));   
-            setTimeout(()=> index++, 15);     
-        }, speed);
-        if(index >= text.length){
-            clearInterval(interval);
-            console.log("cleared");
-        }
-        return () => {
-            setFormedText("");
-            clearInterval(interval);
-        }
-    }, [text, speed]);
+  useEffect(() => {
+    // keep track of mounted state so timers don't run after unmount
+    mountedRef.current = true;
+    return () => {
+      mountedRef.current = false;
+      clearTimeout(timerRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    setDisplayed("");
+
+    let i = 0;
+    const tick = () => {
+      if (!mountedRef.current) return; // safety
+      if (i < text.length) {
+        setDisplayed(text.slice(0, i + 1));
+        i += 1;
+        timerRef.current = setTimeout(tick, speed);
+      } else {
+      }
+    };
+
+    // start typing
+    timerRef.current = setTimeout(tick, speed);
+
+    // cleanup if text or component changes
+    return () => clearTimeout(timerRef.current);
+  }, [text, speed]);
 
     return ( 
         <>
-            <span style={style}>{formedText}</span>
-            {formedText !== text ? <span className='blinker'></span> : ''}
+            <span style={style}>{displayed}</span>
+            {displayed !== text ? <span className='blinker'></span> : ''}
         </>
     )
 

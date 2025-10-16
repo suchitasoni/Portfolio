@@ -374,7 +374,7 @@ li#fifth{
     "header"
     "main";
     grid-template-columns: repeat(16, minmax(0px, 1fr));
-    grid-template-rows: repeat(14, minmax(0px, 50px));
+    grid-template-rows: repeat(15, minmax(0px, 50px));
 }
 .page-overlay{
     color: var(--text-color);
@@ -412,6 +412,9 @@ li#fifth{
     }
     #react{
       background-image: url('../public/react.png');
+    }
+    #javascript{
+      background-image: url('../public/javascript.png');
     }
     #html{
       background-image: url('../public/html.png');
@@ -523,4 +526,13 @@ form#form{
   50%{
     opacity: 0;
   }
+}
+.pin{
+      width: 7px;
+    border: solid 5px;
+    position: absolute;
+    border-radius: 47%;
+    left: 49%;
+    height: 7px;
+    top: 20px;
 }

@@ -38,11 +38,13 @@ const ExpandedBox = () => {
       root.style.setProperty('--education-background', "#2a2a28");
       root.style.setProperty('--education-tile', "#000000ff");
       root.style.setProperty('--text-color', "#fff");
+      root.style.setProperty('--swing-board', "#000000ff")
     }
     else{
       root.style.setProperty('--education-background', "#f0e9a4");
       root.style.setProperty('--education-tile', "#d2dee0");
       root.style.setProperty('--text-color', "#000000ff");
+      root.style.setProperty('--swing-board', "#3f200c")
     }
     setOpen(true);
     setLoading(false);
@@ -75,18 +77,19 @@ const ExpandedBox = () => {
         >
           <div className="education-grid">
             <div
-              style={{
-                padding: "20px 0px",
-                zIndex: "1",
-              }}
-            >
-              <h1 style={{position:'absolute', left:'40%'}}>
-                EDUCATION
-              </h1>
-            </div>
+                style={{
+                    padding: "20px 0px",
+                    zIndex: "1",
+                }}
+                >
+                <h1 className="experience-heading">
+                    <div className="pin"></div>
+                    EDUCATION
+                </h1>
+                </div>
             <div
               className="education-item"
-              style={{ gridArea: "3 / 3 / 6 / 14", opacity: "1" }}
+              style={{ gridArea: "5 / 3 / 8 / 14", opacity: "1" }}
             >
               <a href="https://www.linkedin.com/in/suchita-soni/details/certifications/">
                 Certifications
@@ -96,7 +99,7 @@ const ExpandedBox = () => {
             </div>
             <div
               className="education-item"
-              style={{ gridArea: "7/3/10/14", opacity: 1 }}
+              style={{ gridArea: "9/3/12/14", opacity: 1 }}
             >
               <p>Senior Secondary (12th Grade) | PCM</p>
               <p>Maharishi Vidya Mandir School | CBSE</p>
@@ -104,7 +107,7 @@ const ExpandedBox = () => {
             </div>
             <div
               className="education-item"
-              style={{ gridArea: "11/3/14/14", opacity: 1 }}
+              style={{ gridArea: "13/3/16/14", opacity: 1 }}
             >
               <p>Bachelor's of Engineering / ECE</p>
               <p>Oriental College of Technology | RGPV University</p>
@@ -112,13 +115,20 @@ const ExpandedBox = () => {
             </div>
           </div>
           <div style={{padding: '20px 50px',justifyItems: 'center'}}>
-            <div style={{height:'50px'}}>
-              <h1 style={{position:'absolute', left:'45%'}}>
-                SKILLS
-              </h1>
-            </div>
+            <div
+                style={{
+                    padding: "20px 0px",
+                    zIndex: "1", height: "150px"
+                }}
+                >
+                <h1 className="experience-heading">
+                    <div className="pin"></div>
+                    SKILLS
+                </h1>
+                </div>
             <Trail open={openSkill}>
                 <div id="react">REACT</div>
+                <div id="javascript">JAVASCRIPT</div>
                 <div id="html">HTML</div>
                 <div id="css">CSS</div>
                 <div id="redux">REDUX</div>
