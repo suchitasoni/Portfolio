@@ -8,7 +8,7 @@ const Projects = () => {
 
     return(
         <div style={{textAlign: "center"}}>
-            <div>Projects</div>
+            <div style={{position: 'relative',fontWeight: '600',fontStyle: 'italic',marginBottom: '2%',fontSize:'x-large'}}>Projects</div>
             <div
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}>

@@ -10,13 +10,13 @@ const Trail = ({ open, children }) => {
     config: { mass: 5, tension: 2000, friction: 200 },
     opacity: open ? 1 : 0,
     x: open ? 0 : 20,
-    height: open ? 110 : 0,
+    height: open ? 60 : 0,
     from: { opacity: 0, x: 20, height: 0 },
   })
   return (
     <div>
       {trail.map(({ height, ...style }, index) => (
-        <a.div key={index} className="trailsText" style={style}>
+        <a.div className="trailsText" style={style}>
           <a.div style={{ height }}>{items[index]}</a.div>
         </a.div>
       ))}
@@ -26,10 +26,10 @@ const Trail = ({ open, children }) => {
 const Experience = () => {
     const [isHovering, setIsHovering] = useState(false);
     const {iconSrc, mode} = useContext(UserContext);
-  const [open, set] = useState(true)
+  const [open, setOpen] = useState(true)
 
     return(
-        <div style={{textAlign: 'center',margin: '80px 0px'}}>
+        <div style={{textAlign: 'center',margin: '5% 0px',height: '90%'}}>
             <h2 className='heading'>Work Experience</h2>
             <div
                 onMouseEnter={() => setIsHovering(true)}
@@ -42,15 +42,16 @@ const Experience = () => {
                         stroke="bold"
                         state={isHovering ? 'morph-open' : 'in-reveal'} //morph-open
                         colors="primary:#121331,secondary:#7166ee,tertiary:#ee66aa,quaternary:#ebe6ef"
-                        style={{width: '130px', height: '130px'}}>
+                        style={{width: '130px', height: '130px', float: 'none'}}>
                     </lord-icon>
             </div>
-            <div className="container" onClick={() => set(state => !state)}>
+            <div className="container" onClick={() => setOpen(state => !state)}>
                 <Trail open={open}>
                     <li id='first'>React Development</li>
-                    <li id='second'>API Integration $ State management</li>
-                    <li id='third'>Performance Optimization</li>
-                    <li id='fourth'>Agile Collaboration</li>
+                    <li id='second'>API Integration</li>
+                    <li id='third'>State management</li>
+                    <li id='fourth'>Performance Optimization</li>
+                    <li id='fifth'>Agile Collaboration</li>
                 </Trail>
             </div>
         </div>

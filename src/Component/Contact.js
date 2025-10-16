@@ -40,8 +40,8 @@ const Contact = () => {
         setEmail("");
     }
     return(
-        <div style={{textAlign: 'center',display: 'flex',justifyContent: 'space-evenly'}}>
-            <div
+        <div style={{textAlign: 'center',display: 'flex',justifyContent: 'space-evenly',alignContent: 'center',flexDirection: 'row',flexWrap: 'wrap',height: '100%'}}>
+            <div style={{cursor:'pointer'}}
                 onMouseEnter={() => setIsHoveringInsta(true)}
                 onMouseLeave={() => setIsHoveringInsta(false)}
                 onClick={()=>{window.open(linkedIn, "_blank")}}>
@@ -54,7 +54,7 @@ const Contact = () => {
                         style={{width: '80px', height: '80px'}}>
                     </lord-icon>
             </div>
-            <div
+            <div style={{cursor:'pointer'}}
                 onMouseEnter={() => setIsHoveringGit(true)}
                 onMouseLeave={() => setIsHoveringGit(false)}
                 onClick={()=>{window.open(gitLink, "_blank")}}>
@@ -67,7 +67,7 @@ const Contact = () => {
                         style={{width: '80px', height: '80px'}}>
                     </lord-icon>
             </div>
-            <div
+            <div style={{cursor:'pointer'}}
                 onMouseEnter={() => setIsHoveringMail(true)}
                 onMouseLeave={() => setIsHoveringMail(false)}
                 onClick={()=>{setModalOpen(true)}}>

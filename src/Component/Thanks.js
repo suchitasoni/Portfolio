@@ -4,7 +4,7 @@ import '../Toggle.scss';
 import { UserContext } from '../Context';
 
 const Thanks = () => {
-    const {iconSrc, mode, change} = useContext(UserContext);
+    const {mode, change} = useContext(UserContext);
     const [isOff, setIsOff] = useState(mode);
 
     const handleChange = () => {
@@ -12,8 +12,9 @@ const Thanks = () => {
         setIsOff(!isOff);
     }    
     return(
-        <div style={{textAlign: 'center',position: 'relative',top: '28%'}}>
+        <div className='toggle'>
             <label className="switch">
+                <span style={{visibility:'hidden'}}>Toggle dark mode</span>
                 <input type="checkbox" checked={!isOff} onChange={handleChange}/>
                 <span className="slider"></span>
             </label>

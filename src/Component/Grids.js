@@ -4,18 +4,22 @@ import { useTrail, a, useSprings, config } from "react-spring";
 import { useTransition, animated } from 'react-spring';
 
 const Grids = () => {
-    const {mode, gridLayout} = useContext(UserContext);
+    const {mode, gridLayout, loading, setLoading} = useContext(UserContext);
     const [start, setStart] = useState(false);
     const springs = useSprings(gridLayout.length,
         gridLayout.map((item, index) => ({
             from: { opacity: 0, x: item.from.x, y: item.from.y},
             to: { opacity: start ? 1 : 0, x:0, y:0},
-            delay: 1000, 
+            delay: 500, 
             config: {mass:1, tension: 200, friction: 22}
         }))
     )
     useEffect(() => {
+        setLoading(true);
         setStart(true);
+        setTimeout(() => {
+            setLoading(false);
+        }, 500);
     }, []);
     return(
         
