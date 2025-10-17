@@ -39,15 +39,21 @@
 
 .timeline-item {
   position: relative;
-  width: 50%;
+  width: 65%;
   padding: 20px 40px;
   box-sizing: border-box;
   z-index: 1;
   color: black;
+  animation: 3s ease 0s normal none infinite swingCard;
+  transform-origin: top;
 }
-
+@keyframes swingCard{
+    0%{transform:rotate(-1deg)}
+    50%{transform:rotate(1deg)}
+    100%{transform:rotate(-1deg)}
+}
 .timeline-item:nth-child(odd) {
-  left: 0;
+  right: 15%;
   text-align: right;
 }
 
@@ -98,18 +104,15 @@
 /* Responsive */
 @media (max-width: 768px) {
   .timeline-line {
-    left: 8px;
+    visibility: hidden;
   }
   .timeline-item {
     width: 100%;
     padding-left: 40px;
     text-align: left;
+    right: 0 !important;
   }
   .timeline-item:nth-child(even) {
     left: 0;
-  }
-  .timeline-dot {
-    left: 9px;
-    top:160px;
   }
 }

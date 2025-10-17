@@ -97,120 +97,7 @@ input:focus, textarea:focus, select:focus {
     position: relative;
     top: 28%;
   }
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 6px;
-    padding: 2px;
-  }
-  .grid-element {
-    padding: 6px;
-    font-size: 0.95em;
-    justify-items: anchor-center;
-  }
-  .modal-content {
-    width: 90vw;
-    height: auto;
-    padding: 10px;
-  }
-  .page-overlay {
-    flex-direction: column;
-    width: 98vw;
-    height: auto;
-    margin: 2vw 0;
-    padding: 0;
-  }
-  .center-line {
-    display: none;
-  }
-  .container {
-        flex-direction: column;
-    align-items: stretch;
-    padding: 0 5vw;
-    font-size: 12px;
-  }
-  form#form input[type="text"] {
-    width: 80vw;
-    height: 4.5vh;
-  }
-  .btnbg, .btnfg {
-    width: 90vw;
-    max-width: 180px;
-  }
-  .education-item {
-    padding: 15px;
-    font-size: 1em;
-    line-height: 1.5em;
-  }
-  .column-2, .column-3, .column-4, .column-5{
-    grid-column: span 1 / span 1 !important;
-  }
-  .row-2, .row-3, .row-4, .row-5, .row-6, .row-7{
-    grid-row: span 1/ span 1 !important;
-  }
-  lord-icon{
-    float: left;
-  }
-  .toggle{
-    text-align: center;
-    position: relative;
-    top: 20%;
-  }
-}
 
-@media (max-width: 480px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    gap: 4px;
-    padding: 1px;
-  }
-  .grid-element {
-    padding: 4px;
-    font-size: 0.9em;
-  }
-  .modal-content {
-    width: 98vw;
-    padding: 6px;
-    border-radius: 3%;
-  }
-  .page-overlay {
-    width: 100vw;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: none;
-  }
-  .container {
-    padding: 0 2vw;
-  }
-  form#form input[type="text"] {
-    width: 95vw;
-    font-size: 1em;
-  }
-  .btnbg, .btnfg {
-    width: 95vw;
-    max-width: 150px;
-    font-size: 1em;
-  }
-  .education-item {
-    padding: 10px;
-    font-size: 0.95em;
-  }
-  .column-2, .column-3, .column-4, .column-5{
-    grid-column: span 3 / span 2 !important;
-  }
-  .row-2, .row-3, .row-4, .row-5, .row-6, .row-7{
-    grid-row: span 1/ span 1 !important;
-  }
-  lord-icon{
-    float: left;
-  }
-  .toggle{
-    text-align: center;
-    position: relative;
-    top: 10%;
-  }
-}
 .row-2{
   grid-row: span 2/ span 2 ;
 }
@@ -535,4 +422,122 @@ form#form{
     left: 49%;
     height: 7px;
     top: 20px;
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 6px;
+    padding: 2px;
+  }
+  .grid-element {
+    padding: 6px;
+    font-size: 0.95em;
+    justify-items: anchor-center;
+  }
+  .modal-content {
+    width: 90vw;
+    height: auto;
+    padding: 10px;
+  }
+  .page-overlay {
+    flex-direction: column;
+    width: 98vw;
+    height: auto;
+    margin: 2vw 0;
+    padding: 0;
+  }
+  .center-line {
+    display: none;
+  }
+  .container {
+        flex-direction: column;
+    align-items: stretch;
+    padding: 0 5vw;
+    font-size: 12px;
+  }
+  form#form input[type="text"] {
+    width: 80vw;
+    height: 4.5vh;
+  }
+  .btnbg, .btnfg {
+    width: 90vw;
+    max-width: 180px;
+  }
+  .education-item {
+    padding: 15px;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  .column-2, .column-3, .column-4, .column-5{
+    grid-column: span 1 / span 1 !important;
+  }
+  .row-2, .row-3, .row-4, .row-5, .row-6, .row-7{
+    grid-row: span 1/ span 1 !important;
+  }
+  lord-icon{
+    float: left;
+  }
+  .toggle{
+    text-align: center;
+    position: relative;
+    top: 20%;
+  }
+  .skill-item{
+        width: 43%;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 1px;
+  }
+  .grid-element {
+    padding: 4px;
+    font-size: 0.9em;
+  }
+  .modal-content {
+    width: 98vw;
+    padding: 6px;
+    border-radius: 3%;
+  }
+  .page-overlay {
+    width: 100vw;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .container {
+    padding: 0 2vw;
+  }
+  form#form input[type="text"] {
+    width: 95vw;
+    font-size: 1em;
+  }
+  .btnbg, .btnfg {
+    width: 95vw;
+    max-width: 150px;
+    font-size: 1em;
+  }
+  .education-item {
+        padding: 15px 20px;
+    font-size: 0.85em;
+  }
+  .column-2, .column-3, .column-4, .column-5{
+    grid-column: span 3 / span 2 !important;
+  }
+  .row-2, .row-3, .row-4, .row-5, .row-6, .row-7{
+    grid-row: span 1/ span 1 !important;
+  }
+  lord-icon{
+    float: left;
+  }
+  .toggle{
+    text-align: center;
+    position: relative;
+    top: 10%;
+  }
 }

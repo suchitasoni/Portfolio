@@ -65,7 +65,7 @@ const ExpandedBox = () => {
   };
 
   return (
-    <div>
+    <div style={{cursor:'pointer'}}>
       <CSSTransition
         in={open}
         timeout={300} // Duration of your transition

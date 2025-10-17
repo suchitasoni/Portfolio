@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import { UserContext } from "../Context";
 import { useTrail, a } from "@react-spring/web";
@@ -8,7 +8,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 const experiences = [
   {
-    role: "Associate Consultant (React Developer)",
+    role: "Associate Consultant",
     company: "Infosys Ltd",
     duration: "Nov 2022 – Present",
     description: [
@@ -18,30 +18,30 @@ const experiences = [
       "Integrated CI/CD pipelines using GitLab for efficient deployment and testing.",
       "Collaborated closely with cross-functional teams using Agile methodology to deliver client-focused solutions."
     ],
-    techStack: ["React.js", "TypeScript", "Redux Toolkit", "GitLab", "Jira"],
+    techStack: ["React.js", "JavaScript (ES6)", "TypeScript", "Redux Toolkit", "GitLab", "Jira"],
   },
   {
-    role: "Senior Software Engineer (Frontend Developer)",
+    role: "Senior Software Engineer",
     company: "Capgemini",
-    duration: "Sept 2020 – Nov 2022",
+    duration: "Nov 2021 – Nov 2022",
     description: [
       "Developed ADA-compliant React.js applications for MetLife US & Mexico to manage user profiles and improve accessibility.",
       "Migrated legacy UIs to modern React architecture, improving performance and maintainability by 30%.",
       "Designed responsive and reusable UI components aligned with the company’s design system.",
       "Collaborated in sprint planning and daily stand-ups, ensuring smooth Agile delivery."
     ],
-    techStack: ["React.js", "Redux", "CSS3", "REST APIs", "Jira"],
+    techStack: ["React.js", "Redux", "CSS3", "REST APIs", "Jira", "TypeScript"],
   },
   {
-    role: "Frontend Developer Intern",
+    role: "Software Engineer",
     company: "Capgemini",
-    duration: "Dec 2020 – Sept 2020",
+    duration: "Sept 2020 – Nov 2021",
     description: [
       "Built and redesigned key UI modules for user registration and dashboard pages.",
       "Implemented MFA authentication and dynamic form rendering using React and Redux.",
       "Collaborated with design and backend teams to optimize UI performance and accessibility."
     ],
-    techStack: ["React.js", "Redux", "JavaScript (ES6)", "HTML5", "CSS3"],
+    techStack: ["React.js", "Redux", "JavaScript (ES6)", "HTML5", "CSS3", "Bitbucket"],
   },
 ];
 const Trail = ({ open, children }) => {
@@ -93,6 +93,7 @@ const ExpandedExperience = () => {
   };
   useEffect(() => {
     let root = document.getElementById("root");
+        setLoading(false);
     if (!mode) {
       root.style.setProperty("--education-background", "#2a2a28");
       root.style.setProperty("--education-tile", "#000000ff");
@@ -105,7 +106,6 @@ const ExpandedExperience = () => {
       root.style.setProperty("--swing-board", "#3f200c");
     }
     setOpen(true);
-    setLoading(false);
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -122,7 +122,7 @@ const ExpandedExperience = () => {
   };
 
   return (
-    <div>
+    <div style={{cursor: 'pointer'}}>
       <CSSTransition
         in={open}
         timeout={300} // Duration of your transition
