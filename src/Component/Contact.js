@@ -25,11 +25,13 @@ const Contact = () => {
         .then(
             () => {
             console.log('SUCCESS!');
+            alert("Your message has been sent successfully!");
             resetForm();
             setModalOpen(false);
             },
             (error) => {
-            console.log('FAILED...', error.text);
+                alert("Something went wrong, please try again.");
+                console.log('FAILED...', error.text);
             },
         );
     };
@@ -84,16 +86,16 @@ const Contact = () => {
                 <h1 style={{textAlign: 'center'}}>Contact Me</h1>
                 <form id="form" ref={form} onSubmit={sendEmail}>
                     <div className="field">
-                        <input required type="text" id="title" value={title} onChange={(e)=>setTitle(e.target.value)} placeholder='Subject'/>
+                        <input name='title' required type="text" id="title" value={title} onChange={(e)=>setTitle(e.target.value)} placeholder='Subject'/>
                     </div>
                     <div className="field">
-                        <input required type="text" id="name" value={name}  onChange={(e)=>setName(e.target.value)} placeholder='Your name'/>
+                        <input name='name' required type="text" id="name" value={name}  onChange={(e)=>setName(e.target.value)} placeholder='Your name'/>
                     </div>
                     <div className="field">
-                        <input required type="text" id="message" value={message}  onChange={(e)=>setMessage(e.target.value)} placeholder='Message'/>
+                        <input name='message' required type="text" id="message" value={message}  onChange={(e)=>setMessage(e.target.value)} placeholder='Message'/>
                     </div>
                     <div className="field">
-                        <input required type="text" id="email" value={email}  onChange={(e)=>setEmail(e.target.value)} placeholder='Your email id'/>
+                        <input name='email' required type="text" id="email" value={email}  onChange={(e)=>setEmail(e.target.value)} placeholder='Your email id'/>
                     </div>
                     <div style={{display: 'flex',flexDirection: 'row',marginTop: '20px',gap: '30px',justifyContent: 'space-between'}}>
                         <div className='btnbg'><input className='btnfg' type="submit" id="button" value="Send Email" /></div>
