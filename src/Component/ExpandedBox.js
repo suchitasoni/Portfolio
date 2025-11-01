@@ -29,7 +29,7 @@ const ExpandedBox = () => {
   const handleButtonClick = () => {
     setOpen(false);
     setTimeout(() => {
-      navigate("/Portfolio");
+      navigate("/");
     }, 300); // Match the timeout duration in CSSTransition
   };
   useEffect(() => {
